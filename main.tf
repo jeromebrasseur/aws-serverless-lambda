@@ -4,7 +4,7 @@ provider "aws" {
 
 resource "aws_iam_role" "lambda_role" {
   name = "Lambda_Function_Role"
-  assume_role_policy = <<E0F
+  assume_role_policy = jsonencode(
   {
     "Version" : "2012-10-07"
     "Statement" : [
@@ -18,7 +18,7 @@ resource "aws_iam_role" "lambda_role" {
       }
     ]
   }
-  E0F
+  )
 }
 
 data "archive_file" "lambda_hello_world" {
