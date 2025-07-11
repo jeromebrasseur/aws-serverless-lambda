@@ -1,6 +1,6 @@
 # Deploy Serverless Lambda using Terraform
 
-<p align="center"><img src="img/EKS-Terraform.jpg" width="50%"></p>
+<p align="center"><img src="img/Lambda-Terraform.jpg" width="50%"></p>
 
 ----
 
